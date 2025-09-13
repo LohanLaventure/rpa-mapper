@@ -198,14 +198,14 @@ Arquivo por captura em `./JSONs`. Exemplo abreviado de um **input\:text**:
 
 ```json
 {
-  "saved_at": "2025-09-13T14:23:51.123456",
-  "page_url": "https://exemplo.banco.com/login",
-  "machine_user": "usuario.local",
-  "machine_host": "HOST123",
-  "session": "a1b2c3d4",
+  "saved_at": "2025-09-13T15:20:00Z",
+  "page_url": "https://example.com/demo",
+  "machine_user": "user",
+  "machine_host": "HOST",
+  "session": "deadbeef",
   "element": {
     "frame_path": [],
-    "index": 5,
+    "index": 0,
     "tag": "input",
     "id": "username",
     "classes": "form-control",
@@ -215,11 +215,16 @@ Arquivo por captura em `./JSONs`. Exemplo abreviado de um **input\:text**:
     "title": null,
     "text": "",
     "href": null,
-    "stable_attrs": { "data-testid": "login-user" },
+    "stable_attrs": {
+      "data-testid": "login-user"
+    },
     "selectors": {
-      "css": "html>body>form:nth-of-type(1)>input:nth-of-type(1)",
+      "css": "form > input[name='username']",
       "xpath": "/html/body/form[1]/input[1]",
-      "role_name": { "role": "textbox", "name": "Usuário" }
+      "role_name": {
+        "role": "textbox",
+        "name": "Usuário"
+      }
     },
     "bbox": { "x": 420, "y": 310, "width": 260, "height": 32 },
     "score": 90,
