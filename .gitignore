@@ -1,0 +1,28 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+
+# Playwright
+playwright-report/
+test-results/
+
+# Ambiente local
+.env
+.env.*
+
+# Editor/OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Artefatos de runtime
+JSONs/**
+!JSONs/.gitkeep
+!JSONs/exemplo.json
+
+logs/**
+!logs/.gitkeep
